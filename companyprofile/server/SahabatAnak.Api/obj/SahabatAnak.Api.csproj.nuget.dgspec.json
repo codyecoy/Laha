@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\companyprofile\\server\\SahabatAnak.Api\\SahabatAnak.Api.csproj": {}
+    "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\SahabatAnak.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\companyprofile\\server\\SahabatAnak.Api\\SahabatAnak.Api.csproj": {
+    "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\SahabatAnak.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\companyprofile\\server\\SahabatAnak.Api\\SahabatAnak.Api.csproj",
+        "projectUniqueName": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\SahabatAnak.Api.csproj",
         "projectName": "SahabatAnak.Api",
-        "projectPath": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\companyprofile\\server\\SahabatAnak.Api\\SahabatAnak.Api.csproj",
+        "projectPath": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\SahabatAnak.Api.csproj",
         "packagesPath": "C:\\Users\\BANGJODI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\companyprofile\\server\\SahabatAnak.Api\\obj\\",
+        "outputPath": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
