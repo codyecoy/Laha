@@ -1,0 +1,7 @@
+Closing : GIT_SSH_COMMAND=ssh -i ~.sshid_ed25519 
+closing : git clone -b main git@github-cody:codyecoy/konsultasihukum.git
+
+
+Test SSH Git : ssh -T git@github-cody
+
+Remot Git : git remote set-url origin git@github-cody:codyecoy/konsultasihukum.git

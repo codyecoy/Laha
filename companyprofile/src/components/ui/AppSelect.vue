@@ -1,0 +1,36 @@
+<script setup>
+const props = defineProps({
+  modelValue: { type: String, default: '' },
+  label: { type: String, default: '' },
+  hint: { type: String, default: '' },
+  error: { type: String, default: '' },
+  options: { type: Array, default: () => [] },
+  name: { type: String, default: '' },
+  disabled: { type: Boolean, default: false },
+})
+
+const emit = defineEmits(['update:modelValue'])
+</script>
+
+<template>
+  <label class="block">
+    <span v-if="label" class="mb-1.5 block text-sm font-semibold text-slate-800">{{ label }}</span>
+    <select
+      :value="modelValue"
+      :name="name || undefined"
+      :disabled="disabled"
+      class="h-11 w-full rounded-xl bg-white px-3 text-slate-900 shadow-md ring-1 ring-slate-200/70 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#099044]/25"
+      :class="[
+        disabled ? 'cursor-not-allowed bg-slate-50 text-slate-500' : '',
+        error ? 'ring-rose-200 focus:ring-rose-500/25' : '',
+      ]"
+      @change="emit('update:modelValue', $event.target.value)"
+    >
+      <option v-for="opt in options" :key="opt.value ?? opt" :value="opt.value ?? opt">
+        {{ opt.label ?? opt }}
+      </option>
+    </select>
+    <span v-if="hint && !error" class="mt-1.5 block text-xs text-slate-500">{{ hint }}</span>
+    <span v-if="error" class="mt-1.5 block text-xs font-semibold text-rose-600">{{ error }}</span>
+  </label>
+</template>
