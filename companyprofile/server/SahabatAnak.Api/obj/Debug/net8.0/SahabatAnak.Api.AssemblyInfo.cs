@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SahabatAnak.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f3e298f8216b7849f86df09fdbf07bb2f7b836c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a3a860f6df1d8b69b6403d71c4f2edcd420c613")]
 [assembly: System.Reflection.AssemblyProductAttribute("SahabatAnak.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SahabatAnak.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
