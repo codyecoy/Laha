@@ -7,7 +7,7 @@ mockDb.ensure()
 const AUTH_KEY = 'sa_auth_v1'
 const API_BASE_URL =
   import.meta.env.VITE_API_BASE_URL ||
-  (import.meta.env.DEV && typeof window !== 'undefined' ? `http://${window.location.hostname}:5166` : 'http://localhost:5166')
+  (import.meta.env.DEV && typeof window !== 'undefined' ? `http://${window.location.hostname}:39744` : 'http://localhost:39744')
 
 const http = axios.create({
   baseURL: API_BASE_URL,
@@ -53,7 +53,7 @@ export const api = {
       const normalizedEmail = String(email || '').trim().toLowerCase()
       const normalizedPassword = String(password || '')
       if (normalizedEmail === 'admin@sahabatanak.org' && normalizedPassword === 'admin123') {
-        return { ok: true, token: 'mock', user: { email: normalizedEmail, name: 'Admin Sahabat Anak', role: 'Admin' } }
+        return { ok: true, token: 'mock', user: { email: normalizedEmail, name: 'Admin LAHA', role: 'Admin' } }
       }
       return { ok: false, message: e?.response?.data?.message || 'Email atau password salah.' }
     }

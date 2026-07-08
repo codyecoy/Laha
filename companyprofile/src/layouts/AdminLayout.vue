@@ -33,7 +33,7 @@ const mobileOpen = ref(false)
             </div>
             <div class="leading-tight">
               <div class="text-sm font-extrabold tracking-tight text-slate-900">Admin</div>
-              <div class="text-xs text-slate-500">Sahabat Anak</div>
+              <div class="text-xs text-slate-500">LAHA</div>
             </div>
           </div>
           <button

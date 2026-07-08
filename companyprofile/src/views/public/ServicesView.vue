@@ -30,7 +30,7 @@ const steps = [
       >
         <AppBadge tone="emerald">Layanan</AppBadge>
         <h1 class="mt-4 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-          Pendampingan yang terstruktur, hangat, dan profesional.
+          Pendampingan yang terstruktur, responsif, dan profesional.
         </h1>
         <p class="mt-4 max-w-3xl text-pretty text-base leading-relaxed text-slate-600 sm:text-lg">
           Fokus kami adalah membantu masyarakat dan keluarga mengambil langkah yang tepat — tanpa mengorbankan keselamatan dan privasi.
@@ -57,7 +57,7 @@ const steps = [
           <div class="grid gap-0 lg:grid-cols-12">
             <div class="overflow-hidden lg:col-span-5" :class="idx % 2 === 1 ? 'lg:order-last' : ''">
               <img
-                :src="s.imageUrl || 'https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1400&q=80'"
+                :src="s.imageUrl || '../../assets/images/image9.JPG'"
                 :alt="s.title"
                 class="h-full w-full object-cover transition duration-300 ease-in-out hover:scale-105"
                 style="aspect-ratio: 4 / 3"
@@ -157,9 +157,9 @@ const steps = [
               <AppIcon name="phone" class="h-4.5 w-4.5 text-amber-500" />
               Hotline
             </div>
-            <div class="mt-2 text-2xl font-extrabold tracking-tight text-slate-900">(+62) 800-123-456</div>
+            <div class="mt-2 text-2xl font-extrabold tracking-tight text-slate-900">(022) 720 7021</div>
             <div class="mt-2 text-sm leading-relaxed text-slate-600">
-              Jam layanan: 08.00–20.00 WIB. Jika situasi darurat, segera hubungi layanan darurat setempat.
+              Jam layanan: 09.00–20.00 WIB. Jika situasi darurat, segera hubungi layanan darurat setempat.
             </div>
           </div>
           <div class="flex flex-col gap-3 lg:col-span-4 lg:items-end">

@@ -14,8 +14,8 @@ const form = reactive({
   name: '',
   email: '',
   phone: '',
-  method: 'Virtual Account',
-  recipientKey: 'bca',
+  method: 'Transfer',
+  recipientKey: 'bni',
   referenceCode: '',
   proofUrl: '',
   note: '',
@@ -27,30 +27,30 @@ const success = ref(false)
 const successId = ref('')
 
 const methodOptions = [
-  { label: 'Virtual Account', value: 'Virtual Account' },
-  { label: 'QRIS', value: 'QRIS' },
-  { label: 'Kartu (dummy)', value: 'Kartu' },
+  { label: 'Transfer', value: 'Transfer' },
+  // { label: 'QRIS', value: 'QRIS' },
+  // { label: 'Kartu (dummy)', value: 'Kartu' },
 ]
 
 const recipients = [
   {
-    key: 'bca',
-    bank: 'BCA',
-    accountNumber: '1234567890',
-    accountName: 'Yayasan Sahabat Anak',
-  },
-  {
     key: 'bni',
     bank: 'BNI',
-    accountNumber: '0987654321',
-    accountName: 'Yayasan Sahabat Anak',
+    accountNumber: '0197915478',
+    accountName: 'Yayasan Lembaga Advokasi Hak Anak',
   },
-  {
-    key: 'bsi',
-    bank: 'BSI',
-    accountNumber: '777000111222',
-    accountName: 'Yayasan Sahabat Anak',
-  },
+  // {
+  //   key: 'bni',
+  //   bank: 'BNI',
+  //   accountNumber: '0987654321',
+  //   accountName: 'Yayasan Sahabat Anak',
+  // },
+  // {
+  //   key: 'bsi',
+  //   bank: 'BSI',
+  //   accountNumber: '777000111222',
+  //   accountName: 'Yayasan Sahabat Anak',
+  // },
 ]
 
 const recipientOptions = recipients.map((r) => ({
@@ -159,7 +159,7 @@ watch(
             }"
           >
             <img
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80"
+              src="/src/assets/images/donasi1.png"
               alt="Kolaborasi pendampingan dan advokasi"
               class="aspect-[4/3] w-full object-cover transition duration-300 ease-in-out group-hover:scale-105"
               loading="lazy"

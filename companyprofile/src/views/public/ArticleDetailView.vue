@@ -26,7 +26,7 @@ async function fetchDetail() {
     if (found) {
       applySeo({
         meta: {
-          title: `${found.title} • Sahabat Anak`,
+          title: `${found.title} • LAHA`,
           description: found.excerpt || 'Artikel edukasi perlindungan anak.',
         },
       })
@@ -139,7 +139,7 @@ onMounted(async () => {
               <AppButton variant="soft" to="/kontak">Konsultasi</AppButton>
             </div>
             <div class="mt-4 rounded-xl bg-amber-50 p-4 text-xs text-slate-700 ring-1 ring-amber-100">
-              Hotline (08.00–20.00): <span class="font-extrabold">(+62) 800-123-456</span>
+              Hotline (08.00–20.00): <span class="font-extrabold">(022) 720 7023</span>
             </div>
           </div>
 

@@ -281,3 +281,4 @@ C:\Users\BANGJODI\Documents\GitHub\Laha\Laha\companyprofile\server\SahabatAnak.A
 C:\Users\BANGJODI\Documents\GitHub\Laha\Laha\companyprofile\server\SahabatAnak.Api\obj\Debug\net8.0\SahabatAnak.Api.pdb
 C:\Users\BANGJODI\Documents\GitHub\Laha\Laha\companyprofile\server\SahabatAnak.Api\obj\Debug\net8.0\SahabatAnak.Api.genruntimeconfig.cache
 C:\Users\BANGJODI\Documents\GitHub\Laha\Laha\companyprofile\server\SahabatAnak.Api\obj\Debug\net8.0\ref\SahabatAnak.Api.dll
+C:\Users\BANGJODI\Documents\GitHub\Laha\Laha\companyprofile\server\SahabatAnak.Api\bin\Debug\net8.0\SahabatAnak.Api.staticwebassets.runtime.json

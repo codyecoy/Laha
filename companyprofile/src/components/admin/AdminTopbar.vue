@@ -34,7 +34,7 @@ const auth = useAuthStore()
             </span>
             <div class="leading-tight">
               <div class="text-sm font-extrabold text-slate-900">Admin Panel</div>
-              <div class="text-xs text-slate-500">Sahabat Anak</div>
+              <div class="text-xs text-slate-500">LAHA</div>
             </div>
           </div>
         </div>

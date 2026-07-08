@@ -249,7 +249,7 @@ async function submit() {
                 Pastikan korban berada di tempat aman. Hubungi layanan darurat setempat jika ada ancaman langsung.
               </div>
               <div class="mt-4 rounded-xl bg-amber-50 p-4 text-sm text-slate-800 ring-1 ring-amber-100">
-                Hotline: <span class="font-extrabold">(+62) 800-123-456</span> (08.00–20.00 WIB)
+                Hotline: <span class="font-extrabold">(022) 720 7023</span> (08.00–20.00 WIB)
               </div>
             </AppCard>
 

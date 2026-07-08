@@ -22,7 +22,7 @@ const links = [
               <AppIcon name="shield" class="h-5 w-5 text-[#285858]" />
             </span>
             <div class="leading-tight">
-              <div class="text-base font-extrabold tracking-tight text-slate-900">Sahabat Anak</div>
+              <div class="text-base font-extrabold tracking-tight text-slate-900">LAHA</div>
               <div class="text-sm text-slate-500">Aman, dipercaya, peduli, profesional.</div>
             </div>
           </div>
@@ -48,7 +48,7 @@ const links = [
                   <AppIcon name="phone" class="h-4.5 w-4.5 text-[#285858]" />
                 </span>
                 <div>
-                  <div class="text-sm font-semibold text-slate-900">(+62) 800-123-456</div>
+                  <div class="text-sm font-semibold text-slate-900">(022) 720 7023</div>
                   <div class="mt-0.5 text-xs text-slate-500">Setiap hari 08.00–20.00 WIB</div>
                   <div class="mt-2 text-xs text-slate-600">Jika keadaan darurat, segera hubungi layanan darurat setempat.</div>
                 </div>
@@ -89,14 +89,8 @@ const links = [
       </div>
 
       <div class="mt-12 flex flex-col gap-3 border-t border-slate-200/70 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-        <div>© {{ new Date().getFullYear() }} Sahabat Anak. Semua hak dilindungi.</div>
-        <div class="flex items-center gap-2">
-          <span class="inline-flex items-center gap-1 rounded-full bg-amber-100 px-2 py-1 font-semibold text-amber-900 ring-1 ring-amber-200">
-            <span class="h-1.5 w-1.5 rounded-full bg-amber-500" />
-            Data demo / mock
-          </span>
-        </div>
-      </div>
+        <div>© {{ new Date().getFullYear() }} LAHA. Semua hak dilindungi.</div>
+              </div>
     </div>
   </footer>
 </template>

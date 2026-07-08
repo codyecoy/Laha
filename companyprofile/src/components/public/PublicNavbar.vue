@@ -36,7 +36,7 @@ function isActive(to) {
           </span>
           <div class="leading-tight">
             <div class="text-sm font-extrabold tracking-tight text-slate-900">LAHA</div>
-            <div class="text-xs text-slate-500">Perlindungan & Hak Anak</div>
+            <div class="text-xs text-slate-500">Lembaga advokasi Hak Anak</div>
           </div>
         </RouterLink>
 
@@ -55,7 +55,7 @@ function isActive(to) {
         <div class="hidden items-center gap-2 lg:flex">
           <AppButton variant="ghost" size="sm" to="/lapor">Laporkan Kasus</AppButton>
           <AppButton variant="soft" size="sm" to="/kontak">Jadi Relawan</AppButton>
-          <AppButton variant="primary" size="sm" to="/donasi">Donasi</AppButton>
+          <AppButton variant="primary" size="sm" to="/donai">Donasi</AppButton>
         </div>
 
         <button

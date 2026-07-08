@@ -80,7 +80,7 @@ async function submit() {
             }"
           >
             <img
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80"
+              src="/src/assets/images/image8.JPG"
               alt="Tim dan relawan berkolaborasi"
               class="aspect-[4/3] w-full object-cover transition duration-300 ease-in-out group-hover:scale-105"
               loading="lazy"
@@ -146,8 +146,8 @@ async function submit() {
               </div>
               <div>
                 <div class="text-sm font-extrabold text-slate-900">Hotline</div>
-                <div class="mt-1 text-sm font-semibold text-slate-700">(+62) 800-123-456</div>
-                <div class="mt-1 text-xs text-slate-500">08.00–20.00 WIB</div>
+                <div class="mt-1 text-sm font-semibold text-slate-700">(022) 7207023</div>
+                <div class="mt-1 text-xs text-slate-500">09.00–20.00 WIB</div>
               </div>
             </div>
             </AppCard>
@@ -162,14 +162,14 @@ async function submit() {
                 transition: { type: 'tween', duration: 360, delay: 140, ease: [0.16, 1, 0.3, 1] },
               }"
             >
-              <div class="text-sm font-extrabold text-slate-900">Lokasi (demo)</div>
+              <div class="text-sm font-extrabold text-slate-900">Lokasi</div>
               <div class="mt-3 overflow-hidden rounded-xl shadow-md ring-1 ring-slate-200/70">
                 <iframe
                   title="Map"
                   class="h-56 w-full"
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=106.783%2C-6.214%2C106.861%2C-6.175&layer=mapnik"
+                  src="https://www.openstreetmap.org/way/754154858#map=14/-6.92553/107.66018"
                 />
               </div>
               <div class="mt-3 text-xs text-slate-500">Alamat dan koordinat dapat disesuaikan.</div>

@@ -9,12 +9,21 @@ import HeroIllustration from '../../components/public/HeroIllustration.vue'
 import AppLottie from '../../components/ui/AppLottie.vue'
 import heroLottie from '../../assets/lottie/home-hero.json'
 
+import gambar1 from '../../assets/images/image1.JPG'
+import gambar2 from '../../assets/images/image2.JPG'
+import gambar3 from '../../assets/images/image3.JPG'
+import gambar4 from '../../assets/images/image4.JPG'
+import gambar5 from '../../assets/images/image5.JPG'
+import gambar6 from '../../assets/images/image6.JPG'
+import gambar7 from '../../assets/images/image7.JPG'
+import gambar8 from '../../assets/images/image8.JPG'
+
 const content = useContentStore()
 
 const services = computed(() => content.services.slice(0, 4))
 const latestArticles = computed(() => [...content.articles].slice(0, 3))
 const stats = [
-  { label: 'Kasus didampingi (demo)', value: '1.240+' },
+  { label: 'Kasus didampingi', value: '1.240+' },
   { label: 'Sesi edukasi komunitas', value: '320+' },
   { label: 'Relawan terlibat', value: '180+' },
   { label: 'Kota/daerah cakupan', value: '24' },
@@ -44,27 +53,27 @@ const testimonials = [
 
 const gallery = [
   {
-    src: 'https://images.unsplash.com/photo-1604881984065-32b9c2a0b7ba?auto=format&fit=crop&w=1400&q=80',
+    src: gambar3,
     alt: 'Kegiatan edukasi bersama orang tua',
   },
   {
-    src: 'https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1400&q=80',
+    src: gambar4,
     alt: 'Anak dan keluarga (humanis)',
   },
   {
-    src: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1400&q=80',
+    src: gambar5,
     alt: 'Sesi pendampingan komunitas',
   },
   {
-    src: 'https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1400&q=80',
+    src: gambar6,
     alt: 'Kegiatan edukasi di ruang kelas',
   },
   {
-    src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80',
+    src: gambar7,
     alt: 'Tim relawan berdiskusi',
   },
   {
-    src: 'https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1400&q=80',
+    src: gambar8,
     alt: 'Sesi kerja tim dan koordinasi',
   },
 ]
@@ -92,7 +101,7 @@ const gallery = [
           </h1>
           <div class="mt-3 h-1 w-20 rounded-full bg-gradient-to-r from-[#285858] via-[#099044] to-[#FDCF08]" />
           <p class="mt-3 max-w-xl text-pretty text-base leading-relaxed text-slate-600 sm:text-lg">
-            Sahabat Anak mendampingi pelaporan, pendampingan hukum, konseling, edukasi, dan kampanye sosial — dengan
+            LAHA mendampingi pelaporan, pendampingan hukum, konseling, edukasi, dan kampanye sosial — dengan
             pendekatan yang humanis dan profesional.
           </p>
 
@@ -147,7 +156,7 @@ const gallery = [
                   y: 0,
                   transition: { type: 'tween', duration: 420, delay: 140, ease: [0.16, 1, 0.3, 1] },
                 }">
-                <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1400&q=80"
+                <img src="../../assets/images/image1.JPG"
                   alt="Anak dan keluarga"
                   class="h-44 w-full object-cover transition duration-300 ease-in-out group-hover:scale-105 sm:h-48"
                   loading="lazy" />
@@ -159,7 +168,7 @@ const gallery = [
                   y: 0,
                   transition: { type: 'tween', duration: 420, delay: 200, ease: [0.16, 1, 0.3, 1] },
                 }">
-                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80"
+                <img src="../../assets/images/image2.JPG"
                   alt="Tim relawan berdiskusi"
                   class="h-44 w-full object-cover transition duration-300 ease-in-out group-hover:scale-105 sm:h-48"
                   loading="lazy" />
@@ -348,7 +357,7 @@ const gallery = [
           </div>
           <div class="flex flex-col gap-3 lg:col-span-4 lg:items-end">
             <AppButton variant="accent" to="/lapor">Laporkan Sekarang</AppButton>
-            <div class="text-sm font-semibold text-white/90">Hotline: (+62) 800-123-456</div>
+            <div class="text-sm font-semibold text-white/90">Hotline: (022) 720 7023</div>
           </div>
         </div>
       </div>

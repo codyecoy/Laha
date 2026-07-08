@@ -14,7 +14,7 @@ public static class DbInitializer
             var admin = new AppUser
             {
                 Email = "admin@sahabatanak.org",
-                Name = "Admin Sahabat Anak",
+                Name = "Admin LAHA",
                 Role = "Admin",
             };
             admin.PasswordHash = hasher.HashPassword(admin, "admin123");

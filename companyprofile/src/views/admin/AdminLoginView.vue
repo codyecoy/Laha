@@ -53,7 +53,7 @@ async function submit() {
               <AppIcon name="shield" class="h-6 w-6 text-emerald-700" />
             </div>
             <div class="leading-tight">
-              <div class="text-base font-extrabold tracking-tight text-slate-900">Admin Sahabat Anak</div>
+              <div class="text-base font-extrabold tracking-tight text-slate-900">Admin LAHA</div>
               <div class="text-sm text-slate-500">Panel manajemen konten & laporan</div>
             </div>
           </div>

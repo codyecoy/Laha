@@ -4,6 +4,8 @@ import { useContentStore } from '../../store/content'
 import AppBadge from '../../components/ui/AppBadge.vue'
 import AppCard from '../../components/ui/AppCard.vue'
 
+import gambar1 from '../../assets/images/image9.JPG'
+import gambar2 from '../../assets/images/image2.JPG'
 const content = useContentStore()
 const team = computed(() => content.team)
 
@@ -41,11 +43,11 @@ const milestones = [
         >
           <AppBadge tone="emerald">Tentang Kami</AppBadge>
           <h1 class="mt-4 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-            Lembaga advokasi Hak Anak yang hangat, tapi tegas pada kekerasan.
+            Lembaga advokasi Hak Anak, tegas terhadap kekerasan anak.
           </h1>
           <p class="mt-4 max-w-3xl text-pretty text-base leading-relaxed text-slate-600 sm:text-lg">
-            Sahabat LAHA adalah lembaga non-profit yang fokus pada perlindungan hak anak, pendampingan kasus, edukasi, dan kampanye
-            sosial. Kami hadir untuk membantu masyarakat mengambil langkah yang tepat—dengan aman dan bertanggung jawab.
+            LAHA adalah lembaga non-profit yang fokus pada perlindungan hak anak, pendampingan kasus, edukasi, dan kampanye
+            sosial. Kami hadir untuk membantu masyarakat mengambil langkah yang tepat.
           </p>
         </div>
         <div class="lg:col-span-5">
@@ -60,7 +62,7 @@ const milestones = [
             }"
           >
             <img
-              src="https://images.unsplash.com/photo-1604881984065-32b9c2a0b7ba?auto=format&fit=crop&w=1400&q=80"
+              src="../../assets/images/image9.JPG"
               alt="Kegiatan edukasi bersama orang tua"
               class="aspect-[4/3] w-full object-cover transition duration-300 ease-in-out group-hover:scale-105"
               loading="lazy"

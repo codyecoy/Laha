@@ -110,7 +110,7 @@ function seed() {
         title: 'Pendampingan Hukum',
         description: 'Pendampingan berperspektif anak untuk memastikan hak korban terlindungi di setiap tahap.',
         icon: 'scale',
-        imageUrl: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80',
+        imageUrl: '../../assets/images/image9.JPG',
         highlights: ['Konsultasi awal', 'Pendampingan pelaporan', 'Koordinasi aparat & layanan'],
       },
       {
@@ -118,7 +118,7 @@ function seed() {
         title: 'Konseling & Pemulihan',
         description: 'Dukungan psikososial bersama mitra profesional untuk membantu pemulihan yang aman dan bertahap.',
         icon: 'heart',
-        imageUrl: 'https://images.unsplash.com/photo-1522881193457-37ae97c90523?auto=format&fit=crop&w=1600&q=80',
+        imageUrl: '../../assets/images/image2.JPG',
         highlights: ['Skrining kebutuhan', 'Rujukan terverifikasi', 'Pendampingan keluarga'],
       },
       {
@@ -126,7 +126,7 @@ function seed() {
         title: 'Edukasi & Pelatihan',
         description: 'Materi edukasi hak anak, pencegahan kekerasan, dan pola asuh positif untuk komunitas.',
         icon: 'spark',
-        imageUrl: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80',
+        imageUrl: '../../assets/images/image3.JPG',
         highlights: ['Sekolah & komunitas', 'Materi praktis', 'Modul & toolkit'],
       },
       {
@@ -134,7 +134,7 @@ function seed() {
         title: 'Hotline Darurat',
         description: 'Akses cepat untuk konsultasi awal dan rujukan layanan pendampingan sesuai kebutuhan.',
         icon: 'phone',
-        imageUrl: 'https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1600&q=80',
+        imageUrl: '../../assets/images/image4.JPG',
         highlights: ['Jam layanan jelas', 'Respon empatik', 'Privasi terjaga'],
       },
     ],
@@ -145,7 +145,7 @@ function seed() {
         role: 'Koordinator Advokasi',
         bio: 'Mengawal pendampingan hukum dan jejaring layanan.',
         tone: 'emerald',
-        photoUrl: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80',
+        photoUrl: '../../assets/images/image5.JPG',
       },
       {
         id: uid('tm'),
@@ -153,7 +153,7 @@ function seed() {
         role: 'Konselor Mitra',
         bio: 'Fokus pada dukungan psikososial berperspektif anak.',
         tone: 'amber',
-        photoUrl: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80',
+        photoUrl: '../../assets/images/image6.JPG',
       },
       {
         id: uid('tm'),
@@ -161,7 +161,7 @@ function seed() {
         role: 'Edukator Komunitas',
         bio: 'Merancang program edukasi dan kampanye sosial.',
         tone: 'slate',
-        photoUrl: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80',
+        photoUrl: '../../assets/images/image7.JPG',
       },
       {
         id: uid('tm'),
@@ -169,14 +169,14 @@ function seed() {
         role: 'Manajer Program',
         bio: 'Mengelola operasional dan dampak program secara terukur.',
         tone: 'emerald',
-        photoUrl: 'https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1200&q=80',
+        photoUrl: '../../assets/images/image8.JPG',
       },
     ],
     gallery: [
       {
         id: uid('gal'),
         title: 'Edukasi komunitas',
-        imageUrl: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80',
+        imageUrl: '../../assets/images/image9.JPG',
         alt: 'Kegiatan edukasi dan pelatihan komunitas',
         category: 'Edukasi',
         sortOrder: 1,
@@ -185,7 +185,7 @@ function seed() {
       {
         id: uid('gal'),
         title: 'Kolaborasi pendampingan',
-        imageUrl: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80',
+        imageUrl: '../../assets/images/image7.JPG',
         alt: 'Kolaborasi pendampingan dan advokasi',
         category: 'Pendampingan',
         sortOrder: 2,
@@ -194,7 +194,7 @@ function seed() {
       {
         id: uid('gal'),
         title: 'Sesi diskusi',
-        imageUrl: 'https://images.unsplash.com/photo-1522881193457-37ae97c90523?auto=format&fit=crop&w=1600&q=80',
+        imageUrl: '../../assets/images/image4.JPG',
         alt: 'Diskusi dan konseling keluarga',
         category: 'Pemulihan',
         sortOrder: 3,
@@ -203,7 +203,7 @@ function seed() {
       {
         id: uid('gal'),
         title: 'Relawan',
-        imageUrl: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80',
+        imageUrl: '../../assets/images/image2.JPG',
         alt: 'Kegiatan relawan dan komunitas',
         category: 'Komunitas',
         sortOrder: 4,
