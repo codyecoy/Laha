@@ -3,48 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|c:\\users\\bangjodi\\documents\\github\\laha\\laha\\companyprofile\\server\\sahabatanak.api\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|solutionrelative:server\\sahabatanak.api\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|c:\\users\\bangjodi\\documents\\github\\laha\\laha\\companyprofile\\server\\sahabatanak.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|solutionrelative:server\\sahabatanak.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|c:\\users\\bangjodi\\documents\\github\\laha\\laha\\companyprofile\\server\\sahabatanak.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|solutionrelative:server\\sahabatanak.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|c:\\users\\bangjodi\\documents\\github\\laha\\laha\\companyprofile\\server\\sahabatanak.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|solutionrelative:server\\sahabatanak.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|c:\\users\\bangjodi\\documents\\github\\laha\\laha\\companyprofile\\server\\sahabatanak.api\\sahabatanak.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|solutionrelative:server\\sahabatanak.api\\sahabatanak.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|c:\\users\\bangjodi\\documents\\github\\laha\\laha\\companyprofile\\server\\sahabatanak.api\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|solutionrelative:server\\sahabatanak.api\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|c:\\users\\bangjodi\\documents\\github\\laha\\laha\\companyprofile\\server\\sahabatanak.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|solutionrelative:server\\sahabatanak.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|c:\\users\\bangjodi\\documents\\github\\laha\\laha\\companyprofile\\server\\sahabatanak.api\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|solutionrelative:server\\sahabatanak.api\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|c:\\users\\bangjodi\\documents\\github\\laha\\laha\\companyprofile\\server\\sahabatanak.api\\dtos\\contacts\\contactdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|solutionrelative:server\\sahabatanak.api\\dtos\\contacts\\contactdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|c:\\users\\bangjodi\\documents\\github\\laha\\laha\\companyprofile\\server\\sahabatanak.api\\dtos\\common\\pagedresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|solutionrelative:server\\sahabatanak.api\\dtos\\common\\pagedresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|c:\\users\\bangjodi\\documents\\github\\laha\\laha\\companyprofile\\server\\sahabatanak.api\\dtos\\auth\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|solutionrelative:server\\sahabatanak.api\\dtos\\auth\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|c:\\users\\bangjodi\\documents\\github\\laha\\laha\\companyprofile\\server\\sahabatanak.api\\dtos\\articles\\articledtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|solutionrelative:server\\sahabatanak.api\\dtos\\articles\\articledtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|c:\\users\\bangjodi\\documents\\github\\laha\\laha\\companyprofile\\server\\sahabatanak.api\\sahabatanak.api.csproj.lscache||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C106FEBC-CA1D-2918-D2AB-37FCC0947CD1}|server\\SahabatAnak.Api\\SahabatAnak.Api.csproj|solutionrelative:server\\sahabatanak.api\\sahabatanak.api.csproj.lscache||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,20 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DbInitializer.cs",
-              "DocumentMoniker": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\Data\\DbInitializer.cs",
-              "RelativeDocumentMoniker": "server\\SahabatAnak.Api\\Data\\DbInitializer.cs",
-              "ToolTip": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\Data\\DbInitializer.cs*",
-              "RelativeToolTip": "server\\SahabatAnak.Api\\Data\\DbInitializer.cs*",
-              "ViewState": "AgIAAK8AAAAAAAAAAAAAALYAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T18:12:03.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "SahabatAnak.Api.http",
               "DocumentMoniker": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\SahabatAnak.Api.http",
               "RelativeDocumentMoniker": "server\\SahabatAnak.Api\\SahabatAnak.Api.http",
@@ -83,7 +42,21 @@
               "RelativeToolTip": "server\\SahabatAnak.Api\\SahabatAnak.Api.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-03-28T10:50:10.027Z"
+              "WhenOpened": "2026-07-08T18:59:43.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SahabatAnak.Api.csproj.lscache",
+              "DocumentMoniker": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\SahabatAnak.Api.csproj.lscache",
+              "RelativeDocumentMoniker": "server\\SahabatAnak.Api\\SahabatAnak.Api.csproj.lscache",
+              "ToolTip": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\SahabatAnak.Api.csproj.lscache",
+              "RelativeToolTip": "server\\SahabatAnak.Api\\SahabatAnak.Api.csproj.lscache",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-07-08T18:59:42.055Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -93,107 +66,23 @@
               "RelativeDocumentMoniker": "server\\SahabatAnak.Api\\Program.cs",
               "ToolTip": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\Program.cs",
               "RelativeToolTip": "server\\SahabatAnak.Api\\Program.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAvwHoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T10:08:15.457Z",
+              "WhenOpened": "2026-07-08T18:59:38.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\appsettings.json",
               "RelativeDocumentMoniker": "server\\SahabatAnak.Api\\appsettings.json",
               "ToolTip": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\appsettings.json",
               "RelativeToolTip": "server\\SahabatAnak.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-28T10:08:05.494Z",
+              "WhenOpened": "2026-07-08T18:59:33.793Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ContactsController.cs",
-              "DocumentMoniker": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\Controllers\\ContactsController.cs",
-              "RelativeDocumentMoniker": "server\\SahabatAnak.Api\\Controllers\\ContactsController.cs",
-              "ToolTip": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\Controllers\\ContactsController.cs",
-              "RelativeToolTip": "server\\SahabatAnak.Api\\Controllers\\ContactsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T10:08:00.538Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "server\\SahabatAnak.Api\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "server\\SahabatAnak.Api\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T10:07:56.294Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ArticlesController.cs",
-              "DocumentMoniker": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\Controllers\\ArticlesController.cs",
-              "RelativeDocumentMoniker": "server\\SahabatAnak.Api\\Controllers\\ArticlesController.cs",
-              "ToolTip": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\Controllers\\ArticlesController.cs",
-              "RelativeToolTip": "server\\SahabatAnak.Api\\Controllers\\ArticlesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T10:07:50.537Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ContactDtos.cs",
-              "DocumentMoniker": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\DTOs\\Contacts\\ContactDtos.cs",
-              "RelativeDocumentMoniker": "server\\SahabatAnak.Api\\DTOs\\Contacts\\ContactDtos.cs",
-              "ToolTip": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\DTOs\\Contacts\\ContactDtos.cs",
-              "RelativeToolTip": "server\\SahabatAnak.Api\\DTOs\\Contacts\\ContactDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T10:07:43.264Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PagedResultDto.cs",
-              "DocumentMoniker": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\DTOs\\Common\\PagedResultDto.cs",
-              "RelativeDocumentMoniker": "server\\SahabatAnak.Api\\DTOs\\Common\\PagedResultDto.cs",
-              "ToolTip": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\DTOs\\Common\\PagedResultDto.cs",
-              "RelativeToolTip": "server\\SahabatAnak.Api\\DTOs\\Common\\PagedResultDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T10:07:38.459Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoginRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\DTOs\\Auth\\LoginRequestDto.cs",
-              "RelativeDocumentMoniker": "server\\SahabatAnak.Api\\DTOs\\Auth\\LoginRequestDto.cs",
-              "ToolTip": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\DTOs\\Auth\\LoginRequestDto.cs",
-              "RelativeToolTip": "server\\SahabatAnak.Api\\DTOs\\Auth\\LoginRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T10:07:34.006Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ArticleDtos.cs",
-              "DocumentMoniker": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\DTOs\\Articles\\ArticleDtos.cs",
-              "RelativeDocumentMoniker": "server\\SahabatAnak.Api\\DTOs\\Articles\\ArticleDtos.cs",
-              "ToolTip": "C:\\Users\\BANGJODI\\Documents\\GitHub\\Laha\\Laha\\companyprofile\\server\\SahabatAnak.Api\\DTOs\\Articles\\ArticleDtos.cs",
-              "RelativeToolTip": "server\\SahabatAnak.Api\\DTOs\\Articles\\ArticleDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T10:07:26.278Z"
             }
           ]
         }

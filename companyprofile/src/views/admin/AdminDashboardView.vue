@@ -105,7 +105,7 @@ onMounted(fetchStats)
             </div>
           </div>
           <div class="grid h-11 w-11 place-items-center rounded-md bg-emerald-50 ring-1 ring-emerald-100">
-            <AppIcon name="donate" class="h-5 w-5 text-emerald-700" />
+            <AppIcon name="heart" class="h-5 w-5 text-emerald-700" />
           </div>
         </div>
         <div class="mt-4 rounded-md bg-slate-50 p-4 text-xs text-slate-600 ring-1 ring-slate-200/70">

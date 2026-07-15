@@ -2,6 +2,7 @@
 import AppButton from '../ui/AppButton.vue'
 import AppIcon from '../ui/AppIcon.vue'
 import { useAuthStore } from '../../store/auth'
+import logoUrl from '../../assets/images/laha.png'
 
 defineProps({
   onToggleMobile: { type: Function, default: null },
@@ -29,9 +30,7 @@ const auth = useAuthStore()
           </button>
 
           <div class="hidden items-center gap-3 sm:flex">
-            <span class="grid h-9 w-9 place-items-center rounded-md bg-emerald-50 ring-1 ring-emerald-100">
-              <AppIcon name="shield" class="h-4.5 w-4.5 text-emerald-700" />
-            </span>
+            <img :src="logoUrl" alt="LAHA Logo" class="h-9 w-auto object-contain">
             <div class="leading-tight">
               <div class="text-sm font-extrabold text-slate-900">Admin Panel</div>
               <div class="text-xs text-slate-500">LAHA</div>

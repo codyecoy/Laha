@@ -22,6 +22,37 @@ function seed() {
     articles: [
       {
         id: uid('art'),
+        title: 'Hak Anak Menurut Undang-Undang di Indonesia',
+        slug: 'hak-anak-menurut-undang-undang-di-indonesia',
+        category: 'Hukum',
+        excerpt: 'Ringkasan UU Perlindungan Anak dan hak-hak dasar yang harus dipenuhi.',
+        coverTone: 'emerald',
+        isPublished: true,
+        thumbnailUrl:
+          'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1600&q=80',
+        readingTime: 8,
+        publishedAt: daysAgo(5),
+        featured: true,
+        content: `
+<p>Indonesia telah meratifikasi Konvensi Hak Anak (KHA) melalui UU No. 23 Tahun 2002 tentang Perlindungan Anak. Setiap anak berhak mendapatkan perlindungan tanpa diskriminasi.</p>
+<h2>Hak-hak dasar anak</h2>
+<ul>
+  <li>Hak atas hidup dan tumbuh kembang</li>
+  <li>Hak atas pendidikan dan kesehatan</li>
+  <li>Hak atas perlindungan dari kekerasan dan eksploitasi</li>
+  <li>Hak atas identitas dan kewarganegaraan</li>
+  <li>Hak untuk didengar dan pendapatnya dipertimbangkan</li>
+</ul>
+<h2>Lembaga yang membantu</h2>
+<ul>
+  <li>Komisi Perlindungan Anak Indonesia (KPAI)</li>
+  <li>Dinas Pemberdayaan Perempuan dan Perlindungan Anak</li>
+  <li>Lembaga bantuan hukum seperti LAHA</li>
+</ul>
+        `.trim(),
+      },
+      {
+        id: uid('art'),
         title: 'Tanda Kekerasan pada Anak yang Sering Terlewat',
         slug: 'tanda-kekerasan-pada-anak-yang-sering-terlewat',
         category: 'Perlindungan',
@@ -32,7 +63,7 @@ function seed() {
           'https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1600&q=80',
         readingTime: 6,
         publishedAt: daysAgo(12),
-        featured: true,
+        featured: false,
         content: `
 <p>Kekerasan pada anak sering tidak terlihat jelas. Perubahan kecil pada perilaku bisa menjadi sinyal.</p>
 <h2>Yang perlu diperhatikan</h2>
@@ -107,68 +138,68 @@ function seed() {
     services: [
       {
         id: uid('srv'),
-        title: 'Pendampingan Hukum',
-        description: 'Pendampingan berperspektif anak untuk memastikan hak korban terlindungi di setiap tahap.',
+        title: 'Bantuan Hukum Litigasi',
+        description: 'Pendampingan Anak yang Berhadapan dengan Hukum (ABH)',
         icon: 'scale',
         imageUrl: '../../assets/images/image9.JPG',
-        highlights: ['Konsultasi awal', 'Pendampingan pelaporan', 'Koordinasi aparat & layanan'],
+        highlights: ['Pendampingan ABH', 'Advokasi hukum', 'Konsultasi hukum'],
       },
       {
         id: uid('srv'),
-        title: 'Konseling & Pemulihan',
-        description: 'Dukungan psikososial bersama mitra profesional untuk membantu pemulihan yang aman dan bertahap.',
-        icon: 'heart',
+        title: 'Bantuan Hukum Non Litigasi',
+        description: 'Bantuan hukum non-litigasi untuk hak anak dan perlindungan',
+        icon: 'shield',
         imageUrl: '../../assets/images/image2.JPG',
-        highlights: ['Skrining kebutuhan', 'Rujukan terverifikasi', 'Pendampingan keluarga'],
+        highlights: ['Mediasi', 'Konsultasi', 'Pendampingan non-litigasi'],
       },
       {
         id: uid('srv'),
-        title: 'Edukasi & Pelatihan',
-        description: 'Materi edukasi hak anak, pencegahan kekerasan, dan pola asuh positif untuk komunitas.',
-        icon: 'spark',
+        title: 'Pelatihan Paralegal',
+        description: 'Pelatihan untuk meningkatkan kapasitas paralegal dalam pendampingan anak',
+        icon: 'book',
         imageUrl: '../../assets/images/image3.JPG',
-        highlights: ['Sekolah & komunitas', 'Materi praktis', 'Modul & toolkit'],
+        highlights: ['Pelatihan paralegal', 'Modul pelatihan', 'Praktik pendampingan'],
       },
       {
         id: uid('srv'),
-        title: 'Hotline Darurat',
-        description: 'Akses cepat untuk konsultasi awal dan rujukan layanan pendampingan sesuai kebutuhan.',
-        icon: 'phone',
+        title: 'Pendampingan Anak di LPKA',
+        description: 'Pendampingan anak di Lembaga Pembinaan Khusus Anak (LPKA)',
+        icon: 'users',
         imageUrl: '../../assets/images/image4.JPG',
-        highlights: ['Jam layanan jelas', 'Respon empatik', 'Privasi terjaga'],
+        highlights: ['Kunjungan rutin', 'Dukungan psikososial', 'Reintegration program'],
       },
     ],
     team: [
       {
         id: uid('tm'),
-        name: 'Alya Putri',
-        role: 'Koordinator Advokasi',
-        bio: 'Mengawal pendampingan hukum dan jejaring layanan.',
+        name: 'Dadang Sukmawijaya, S.H., M.H.',
+        role: 'Kepala Divisi Bantuan Hukum',
+        bio: 'Ahli hukum anak dengan pengalaman pendampingan ABH lebih dari 15 tahun.',
         tone: 'emerald',
         photoUrl: '../../assets/images/image5.JPG',
       },
       {
         id: uid('tm'),
-        name: 'Raka Pratama',
-        role: 'Konselor Mitra',
-        bio: 'Fokus pada dukungan psikososial berperspektif anak.',
-        tone: 'amber',
+        name: 'Asep Permana, S.H., M.H.',
+        role: 'Advokat',
+        bio: 'Fokus pada litigasi dan non-litigasi untuk perlindungan hak anak.',
+        tone: 'emerald',
         photoUrl: '../../assets/images/image6.JPG',
       },
       {
         id: uid('tm'),
-        name: 'Sinta Wulandari',
-        role: 'Edukator Komunitas',
-        bio: 'Merancang program edukasi dan kampanye sosial.',
-        tone: 'slate',
+        name: 'Distia Aviandari',
+        role: 'Spesialis Juvenile Justice',
+        bio: 'Ahli sistem peradilan anak dan reintegrasi sosial.',
+        tone: 'amber',
         photoUrl: '../../assets/images/image7.JPG',
       },
       {
         id: uid('tm'),
-        name: 'Dimas Kurnia',
-        role: 'Manajer Program',
-        bio: 'Mengelola operasional dan dampak program secara terukur.',
-        tone: 'emerald',
+        name: 'Andi Akbar',
+        role: 'Direktur Eksekutif',
+        bio: 'Memimpin strategi advokasi dan pengembangan program.',
+        tone: 'slate',
         photoUrl: '../../assets/images/image8.JPG',
       },
     ],
@@ -269,8 +300,6 @@ export const mockDb = {
   uid,
   slugify,
   ensure() {
-    const existing = storage.get(DB_KEY, null)
-    if (existing) return existing
     const seeded = seed()
     storage.set(DB_KEY, seeded)
     return seeded

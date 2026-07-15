@@ -15,6 +15,7 @@ import GalleryView from '../views/public/GalleryView.vue'
 import DonateView from '../views/public/DonateView.vue'
 import ContactView from '../views/public/ContactView.vue'
 import ReportCaseView from '../views/public/ReportCaseView.vue'
+import DaftarRelawanView from '../views/public/DaftarRelawanView.vue'
 
 import AdminLoginView from '../views/admin/AdminLoginView.vue'
 import AdminDashboardView from '../views/admin/AdminDashboardView.vue'
@@ -51,7 +52,7 @@ const routes = [
         path: 'layanan',
         name: 'services',
         component: ServicesView,
-        meta: { title: 'Layanan • LAHA', description: 'Pendampingan hukum, konseling, edukasi, dan hotline.' },
+        meta: { title: 'Program Kami • LAHA', description: 'Pendampingan hukum, konseling, edukasi, dan hotline.' },
       },
       {
         path: 'artikel',
@@ -91,6 +92,12 @@ const routes = [
         name: 'report',
         component: ReportCaseView,
         meta: { title: 'Laporan Kasus • LAHA', description: 'Form pelaporan kasus perlindungan anak (bisa anonim).' },
+      },
+      {
+        path: 'daftar-relawan',
+        name: 'daftar-relawan',
+        component: DaftarRelawanView,
+        meta: { title: 'Daftar Relawan • LAHA', description: 'Bergabunglah sebagai relawan untuk mendukung program perlindungan anak.' },
       },
     ],
   },

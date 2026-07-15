@@ -24,14 +24,14 @@ const sizeClass = computed(() => {
 
 const variantClass = computed(() => {
   if (props.variant === 'accent')
-    return 'bg-[#FDCF08] text-slate-900 hover:bg-[#F2C500] focus-visible:ring-[#FDCF08]/45'
+    return 'bg-[#FACC15] text-slate-900 hover:bg-[#FACC15] focus-visible:ring-[#FACC15]/45'
   if (props.variant === 'soft')
-    return 'bg-[#099044]/10 text-[#077A39] ring-1 ring-[#099044]/25 hover:bg-[#099044]/15'
+    return 'bg-[#16A34A]/10 text-[#16A34A] ring-1 ring-[#16A34A]/25 hover:bg-[#16A34A]/15'
   if (props.variant === 'ghost')
     return 'bg-transparent text-slate-700 hover:bg-slate-100 ring-1 ring-slate-200'
   if (props.variant === 'danger')
     return 'bg-rose-600 text-white hover:bg-rose-700 focus-visible:ring-rose-500/35'
-  return 'bg-[#099044] text-white hover:bg-[#077A39] focus-visible:ring-[#099044]/35'
+  return 'bg-[#16A34A] text-white hover:bg-[#15803D] focus-visible:ring-[#16A34A]/35'
 })
 
 const common =

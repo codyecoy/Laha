@@ -61,8 +61,8 @@ async function submit() {
           }"
         >
           <AppBadge tone="emerald">Kontak</AppBadge>
-          <h1 class="mt-4 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-            Hubungi kami untuk kolaborasi, relawan, atau konsultasi awal.
+          <h1 class="mt-4 text-balance text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+            Hubungi kami untuk kolaborasi atau konsultasi awal.
           </h1>
           <p class="mt-4 max-w-3xl text-pretty text-base leading-relaxed text-slate-600 sm:text-lg">
             Kami merespon dengan empatik dan menjaga kerahasiaan. Untuk pelaporan kasus, gunakan form khusus agar lebih terstruktur.
@@ -111,7 +111,7 @@ async function submit() {
                 <AppInput v-model="form.name" label="Nama" placeholder="Nama lengkap" :error="errors.name" />
                 <AppInput v-model="form.email" label="Email" placeholder="email@contoh.com" :error="errors.email" />
               </div>
-              <AppInput v-model="form.subject" label="Subjek (opsional)" placeholder="Misal: Relawan edukasi" />
+              <AppInput v-model="form.subject" label="Subjek (opsional)" placeholder="Misal: Kolaborasi program" />
               <AppTextarea
                 v-model="form.message"
                 label="Pesan"

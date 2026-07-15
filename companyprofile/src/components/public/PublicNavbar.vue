@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { useRoute } from 'vue-router'
 import AppButton from '../ui/AppButton.vue'
 import AppIcon from '../ui/AppIcon.vue'
+import logoUrl from '../../assets/images/laha.png'
 
 const route = useRoute()
 const mobileOpen = ref(false)
@@ -10,10 +11,9 @@ const mobileOpen = ref(false)
 const links = [
   { to: '/', label: 'Home' },
   { to: '/tentang', label: 'Tentang' },
-  { to: '/layanan', label: 'Layanan' },
-  { to: '/artikel', label: 'Artikel' },
+  { to: '/layanan', label: 'Program' },
+  { to: '/artikel', label: 'Berita & Kegiatan' },
   { to: '/galeri', label: 'Galeri' },
-  { to: '/donasi', label: 'Donasi' },
   { to: '/kontak', label: 'Kontak' },
 ]
 
@@ -29,14 +29,12 @@ function isActive(to) {
       <div class="flex h-16 items-center justify-between gap-4">
         <RouterLink
           to="/"
-          class="flex items-center gap-3 rounded-xl px-2 py-1.5 transition duration-300 ease-in-out hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#285858]/25"
+          class="flex items-center gap-3 rounded-xl px-2 py-1.5 transition duration-300 ease-in-out hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary/45"
         >
-          <span class="grid h-9 w-9 place-items-center rounded-xl bg-[#285858]/10 ring-1 ring-[#285858]/20">
-            <AppIcon name="shield" class="h-5 w-5 text-[#285858]" />
-          </span>
+          <img :src="logoUrl" alt="LAHA Logo" class="h-10 w-auto object-contain">
           <div class="leading-tight">
             <div class="text-sm font-extrabold tracking-tight text-slate-900">LAHA</div>
-            <div class="text-xs text-slate-500">Lembaga advokasi Hak Anak</div>
+            <div class="text-xs text-slate-500">Lembaga Advokasi Hak Anak</div>
           </div>
         </RouterLink>
 
@@ -46,7 +44,7 @@ function isActive(to) {
             :key="l.to"
             :to="l.to"
             class="rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 transition duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-slate-100"
-            :class="isActive(l.to) ? 'bg-[#285858]/10 text-[#285858] ring-1 ring-[#285858]/20' : ''"
+            :class="isActive(l.to) ? 'bg-brand-primary/10 text-brand-primary ring-1 ring-brand-primary/25' : ''"
           >
             {{ l.label }}
           </RouterLink>
@@ -54,8 +52,6 @@ function isActive(to) {
 
         <div class="hidden items-center gap-2 lg:flex">
           <AppButton variant="ghost" size="sm" to="/lapor">Laporkan Kasus</AppButton>
-          <AppButton variant="soft" size="sm" to="/kontak">Jadi Relawan</AppButton>
-          <AppButton variant="primary" size="sm" to="/donai">Donasi</AppButton>
         </div>
 
         <button
@@ -85,7 +81,7 @@ function isActive(to) {
               :key="l.to"
               :to="l.to"
               class="rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 transition duration-300 ease-in-out hover:bg-slate-100"
-              :class="isActive(l.to) ? 'bg-[#285858]/10 text-[#285858] ring-1 ring-[#285858]/20' : ''"
+              :class="isActive(l.to) ? 'bg-brand-primary/10 text-brand-primary ring-1 ring-brand-primary/25' : ''"
               @click="mobileOpen = false"
             >
               {{ l.label }}
@@ -93,8 +89,6 @@ function isActive(to) {
           </div>
           <div class="mt-3 grid gap-2">
             <AppButton variant="ghost" to="/lapor" @click="mobileOpen = false">Laporkan Kasus</AppButton>
-            <AppButton variant="soft" to="/kontak" @click="mobileOpen = false">Jadi Relawan</AppButton>
-            <AppButton variant="primary" to="/donasi" @click="mobileOpen = false">Donasi</AppButton>
           </div>
         </div>
       </div>
