@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useContentStore } from '../../store/content'
 import AppBadge from '../../components/ui/AppBadge.vue'
 import AppCard from '../../components/ui/AppCard.vue'
@@ -7,8 +7,15 @@ import AppIcon from '../../components/ui/AppIcon.vue'
 
 import gambar1 from '../../assets/images/image9.JPG'
 import gambar2 from '../../assets/images/image2.JPG'
+import fotoade from '../../assets/images/ade.jpg'
+import fotoandi from '../../assets/images/andi.jpg'
+import fotodadang from '../../assets/images/dadang.jpg'
+
 const content = useContentStore()
 const team = computed(() => content.team)
+
+const activeTab = ref('dewan') // default tab
+const selectedMember = ref(null) // for modal
 
 const values = [
   {
@@ -70,53 +77,40 @@ const missions = [
   },
 ]
 
-const structure = [
-  {
-    title: 'Dewan Pembina',
-    members: [
-      { role: 'Ketua', name: 'Eko Kriswanto' },
-      { role: 'Anggota', name: 'Distia Aviandari' },
-      { role: 'Anggota', name: 'Andi Akbar' },
-    ],
-    tone: 'emerald',
-  },
-  {
-    title: 'Dewan Pengawas',
-    members: [
-      { role: '', name: 'Dan Satriana' },
-    ],
-    tone: 'emerald',
-  },
-  {
-    title: 'Dewan Pengurus',
-    members: [
-      { role: 'Ketua', name: 'Ahmad Faozie Zain' },
-      { role: 'Sekretaris', name: 'Ade Mulyadi' },
-      { role: 'Bendahara', name: 'Lia Masyrurokh' },
-    ],
-    tone: 'amber',
-  },
-  {
-    title: 'Eksekutif',
-    members: [
-      { role: 'Direktur Eksekutif', name: 'Andi Akbar' },
-      { role: 'Manager Administrasi & Keuangan', name: 'Lia Masyrurokh' },
-      { role: 'Admin & Financial Support', name: 'Tanti Rianti H' },
-      { role: 'Spesialis Juvenile Justice', name: 'Distia Aviandari' },
-      { role: 'Divisi Konsultasi dan Bantuan Hukum', name: 'Dadang Sukmawijaya, S.H., M.H.' },
-      { role: 'Divisi Konsultasi dan Bantuan Hukum', name: 'Asep Permana, S.H., M.H.' },
-      { role: 'Divisi Konsultasi dan Bantuan Hukum', name: 'Distia Aviandari' },
-      { role: 'Program', name: 'Ade Mulyadi' },
-      { role: 'Program', name: 'Ida Farida Kh' },
-      { role: 'Program', name: 'Amelya Nur Fauzi' },
-      { role: 'Program', name: 'Eka Desti Ramadhanita' },
-      { role: 'Program', name: 'Lanang Dwi Wicaksono' },
-      { role: 'Media, Informasi & Teknologi', name: 'Dodi' },
-      { role: 'Media, Informasi & Teknologi', name: 'Alma Aksela A' },
-    ],
-    tone: 'emerald',
-  },
+const tabs = [
+  { id: 'dewan', label: 'Dewan' },
+  { id: 'pengurus', label: 'Pengurus' },
+  { id: 'eksekutif', label: 'Eksekutif' },
 ]
+
+const structureData = {
+  dewan: [
+    { role: 'Ketua Dewan Pembina', name: 'Eko Kriswanto', photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80', bio: 'Eko Kriswanto memiliki pengalaman lebih dari 20 tahun di bidang advokasi hak anak, dengan fokus pada kebijakan publik dan perlindungan anak.' },
+    { role: 'Anggota Dewan Pembina', name: 'Distia Aviandari', photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80', bio: 'Distia Aviandari adalah spesialis juvenile justice yang telah membantu ratusan anak mendapatkan akses keadilan yang adil.' },
+    { role: 'Anggota Dewan Pembina', name: 'Andi Akbar', photo: fotoandi, bio: 'Andi Akbar membawa pengalaman di bidang manajemen organisasi nirlaba dan pengembangan program.' },
+    { role: 'Dewan Pengawas', name: 'Dan Satriana', photo: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=600&q=80', bio: 'Dan Satriana bertanggung jawab dalam memastikan transparansi dan akuntabilitas organisasi.' },
+  ],
+  pengurus: [
+    { role: 'Ketua', name: 'Ahmad Faozie Zain', photo: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=600&q=80', bio: 'Ahmad Faozie Zain memimpin dewan pengurus dengan visi untuk memperluas jangkauan layanan LAHA ke lebih banyak wilayah.' },
+    { role: 'Sekretaris', name: 'Ade Mulyadi', photo: fotoade, bio: 'Ade Mulyadi mengelola administrasi dan dokumentasi organisasi dengan cermat dan terorganisir.' },
+    { role: 'Bendahara', name: 'Lia Masyrurokh', photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80', bio: 'Lia Masyrurokh memastikan keuangan organisasi dikelola dengan transparan dan akuntabel.' },
+  ],
+  eksekutif: [
+    { role: 'Direktur Eksekutif', name: 'Andi Akbar', photo: fotoandi, bio: 'Andi Akbar memimpin tim eksekutif dalam mengimplementasikan program-program LAHA untuk perlindungan anak.' },
+    { role: 'Manager Administrasi & Keuangan', name: 'Lia Masyrurokh', photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80', bio: 'Lia Masyrurokh mengelola operasional administrasi dan keuangan sehari-hari organisasi.' },
+    { role: 'Admin & Financial Support', name: 'Tanti Rianti H', photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80', bio: 'Tanti Rianti H membantu dalam pengelolaan data keuangan dan administrasi harian.' },
+    { role: 'Spesialis Juvenile Justice', name: 'Distia Aviandari', photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80', bio: 'Distia Aviandari adalah ahli dalam sistem peradilan anak dan telah mendampingi banyak kasus perlindungan anak.' },
+    { role: 'Divisi Konsultasi dan Bantuan Hukum', name: 'Dadang Sukmawijaya, S.H., M.H.', photo: fotodadang, bio: 'Dadang Sukmawijaya adalah pengacara yang fokus pada hukum perlindungan anak dan advokasi.' },
+    { role: 'Divisi Konsultasi dan Bantuan Hukum', name: 'Asep Permana, S.H., M.H.', photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80', bio: 'Asep Permana memberikan bantuan hukum dan pendampingan kepada anak dan keluarga yang membutuhkan.' },
+    { role: 'Program', name: 'Ade Mulyadi', photo: fotoade, bio: 'Ade Mulyadi mengembangkan dan mengimplementasikan program edukasi dan pencegahan kekerasan terhadap anak.' },
+    { role: 'Program', name: 'Ida Farida Kh', photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80', bio: 'Ida Farida Kh fokus pada program pendampingan keluarga dan pengasuhan positif.' },
+    { role: 'Program', name: 'Amelya Nur Fauzi', photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80', bio: 'Amelya Nur Fauzi mengoordinasikan program komunitas dan pelatihan kader.' },
+    { role: 'Program', name: 'Eka Desti Ramadhanita', photo: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?auto=format&fit=crop&w=600&q=80', bio: 'Eka Desti Ramadhanita mengembangkan materi edukasi dan modul pelatihan.' },
+    { role: 'Program', name: 'Lanang Dwi Wicaksono', photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80', bio: 'Lanang Dwi Wicaksono mengelola program outreach dan kolaborasi mitra.' },
+    // { role: 'Media, Informasi & Teknologi', name: 'Dodi', photo: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=600&q=80', bio: 'Dodi mengelola media sosial dan teknologi informasi organisasi.' },
+    { role: 'Media, Informasi & Teknologi', name: 'Alma Aksela A', photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80', bio: 'Alma Aksela A membuat konten edukatif dan desain komunikasi.' },
+  ],
+}
 </script>
 
 <template>
@@ -257,173 +251,89 @@ const structure = [
       <div class="text-center mb-12" v-motion :initial="{ opacity: 0, y: 16 }" :visible-once="{ opacity: 1, y: 0, transition: { type: 'tween', duration: 800, ease: [0.25, 1, 0.5, 1] } }">
         <div class="text-xs font-semibold uppercase tracking-wider text-brand-primary">Struktur Organisasi</div>
         <h2 class="mt-2 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">Struktur Kepengurusan LAHA</h2>
-        <p class="mt-3 max-w-2xl mx-auto text-slate-600">
-          Susunan pengurus dan struktur organisasi Lembaga Advokasi Hak Anak (LAHA).
-        </p>
+     
       </div>
 
-      <div class="space-y-8">
-        <!-- Level 1: Dewan Pembina & Pengawas -->
-        <div class="grid gap-6 md:grid-cols-2" v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { type: 'tween', duration: 600, delay: 0, ease: [0.16, 1, 0.3, 1] } }">
-          <div class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-slate-200/70 transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
-            <div class="flex items-center gap-3 mb-4">
-              <span class="grid h-10 w-10 place-items-center rounded-xl bg-brand-primary/10 ring-1 ring-brand-primary/25">
-                <AppIcon name="shield" class="h-5 w-5 text-brand-primary"></AppIcon>
-              </span>
-              <h3 class="text-lg font-extrabold tracking-tight text-slate-900">Dewan Pembina</h3>
-            </div>
-            <div class="space-y-3">
-              <div v-for="member in structure[0].members" :key="member.name" class="flex items-start gap-3">
-                <span class="h-2 w-2 rounded-full bg-brand-primary mt-2"></span>
-                <div>
-                  <p v-if="member.role" class="font-semibold text-brand-primary">{{ member.role }}</p>
-                  <p class="text-slate-600">{{ member.name }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-slate-200/70 transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
-            <div class="flex items-center gap-3 mb-4">
-              <span class="grid h-10 w-10 place-items-center rounded-xl bg-brand-primary/10 ring-1 ring-brand-primary/25">
-                <AppIcon name="report" class="h-5 w-5 text-brand-primary"></AppIcon>
-              </span>
-              <h3 class="text-lg font-extrabold tracking-tight text-slate-900">Dewan Pengawas</h3>
-            </div>
-            <div class="space-y-3">
-              <div v-for="member in structure[1].members" :key="member.name" class="flex items-start gap-3">
-                <span class="h-2 w-2 rounded-full bg-brand-primary mt-2"></span>
-                <div>
-                  <p v-if="member.role" class="font-semibold text-brand-primary">{{ member.role }}</p>
-                  <p class="text-slate-600">{{ member.name }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Connection Line -->
-        <div class="flex justify-center">
-          <div class="w-0.5 h-8 bg-slate-300"></div>
-        </div>
-
-        <!-- Level 2: Dewan Pengurus -->
-        <div class="max-w-3xl mx-auto" v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { type: 'tween', duration: 600, delay: 200, ease: [0.16, 1, 0.3, 1] } }">
-          <div class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-slate-200/70 transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
-            <div class="flex items-center gap-3 mb-4">
-              <span class="grid h-10 w-10 place-items-center rounded-xl bg-brand-accent/25 ring-1 ring-brand-accent/35">
-                <AppIcon name="users" class="h-5 w-5 text-brand-accent"></AppIcon>
-              </span>
-              <h3 class="text-lg font-extrabold tracking-tight text-slate-900">Dewan Pengurus</h3>
-            </div>
-            <div class="grid gap-4 sm:grid-cols-3">
-              <div v-for="member in structure[2].members" :key="member.name" class="text-center p-3 rounded-xl bg-slate-50 ring-1 ring-slate-200/70">
-                <p class="font-semibold text-brand-accent">{{ member.role }}</p>
-                <p class="text-slate-600 text-sm mt-1">{{ member.name }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Connection Line -->
-        <div class="flex justify-center">
-          <div class="w-0.5 h-8 bg-slate-300"></div>
-        </div>
-
-        <!-- Level 3: Eksekutif -->
-        <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { type: 'tween', duration: 600, delay: 400, ease: [0.16, 1, 0.3, 1] } }">
-          <div class="rounded-2xl bg-white p-6 sm:p-8 shadow-lg ring-1 ring-slate-200/70 transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
-            <div class="flex items-center gap-3 mb-6">
-              <span class="grid h-10 w-10 place-items-center rounded-xl bg-brand-primary/10 ring-1 ring-brand-primary/25">
-                <AppIcon name="spark" class="h-5 w-5 text-brand-primary"></AppIcon>
-              </span>
-              <h3 class="text-lg font-extrabold tracking-tight text-slate-900">Eksekutif</h3>
-            </div>
-            
-            <!-- Direktur & Manager -->
-            <div class="grid gap-4 sm:grid-cols-3 mb-6">
-              <div v-for="member in structure[3].members.slice(0,3)" :key="member.name" class="p-4 rounded-xl bg-slate-50 ring-1 ring-slate-200/70">
-                <p class="font-semibold text-brand-primary">{{ member.role }}</p>
-                <p class="text-slate-600 text-sm mt-1">{{ member.name }}</p>
-              </div>
-            </div>
-
-            <!-- Divisions -->
-            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              <!-- Spesialis Juvenile Justice -->
-              <div class="p-4 rounded-xl bg-slate-50 ring-1 ring-slate-200/70">
-                <div class="font-semibold text-slate-800 mb-2">Spesialis Juvenile Justice</div>
-                <div class="text-xs text-slate-600 space-y-1">
-                  <p>{{ structure[3].members[3].name }}</p>
-                </div>
-              </div>
-
-              <!-- Divisi Konsultasi dan Bantuan Hukum -->
-              <div class="p-4 rounded-xl bg-slate-50 ring-1 ring-slate-200/70">
-                <div class="font-semibold text-slate-800 mb-2">Konsultasi & Bantuan Hukum</div>
-                <div class="text-xs text-slate-600 space-y-1">
-                  <p v-for="member in structure[3].members.slice(4,7)" :key="member.name">{{ member.name }}</p>
-                </div>
-              </div>
-              
-              <!-- Divisi Program -->
-              <div class="p-4 rounded-xl bg-slate-50 ring-1 ring-slate-200/70">
-                <div class="font-semibold text-slate-800 mb-2">Program</div>
-                <div class="text-xs text-slate-600 space-y-1">
-                  <p v-for="member in structure[3].members.slice(7,13)" :key="member.name">{{ member.name }}</p>
-                </div>
-              </div>
-              
-              <!-- Divisi Media, Informasi & Teknologi -->
-              <div class="p-4 rounded-xl bg-slate-50 ring-1 ring-slate-200/70">
-                <div class="font-semibold text-slate-800 mb-2">Media, Informasi & Teknologi</div>
-                <div class="text-xs text-slate-600 space-y-1">
-                  <p v-for="member in structure[3].members.slice(13,15)" :key="member.name">{{ member.name }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <!-- Tabs -->
+      <div class="flex justify-center mb-10" v-motion :initial="{ opacity: 0, y: 12 }" :visible-once="{ opacity: 1, y: 0, transition: { type: 'tween', duration: 600, ease: [0.25, 1, 0.5, 1] } }">
+        <div class="inline-flex p-1 rounded-xl bg-slate-100">
+          <button
+            v-for="tab in tabs"
+            :key="tab.id"
+            @click="activeTab = tab.id"
+            class="px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300"
+            :class="activeTab === tab.id
+              ? 'bg-brand-primary text-white shadow-md'
+              : 'text-slate-600 hover:bg-white hover:text-slate-900'"
+          >
+            {{ tab.label }}
+          </button>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Team Section -->
-  <section class="py-16 sm:py-20">
-    <div class="mx-auto w-full max-w-7xl px-4 md:px-6 lg:px-8">
-      <div class="text-center mb-12" v-motion :initial="{ opacity: 0, y: 16 }" :visible-once="{ opacity: 1, y: 0, transition: { type: 'tween', duration: 800, ease: [0.25, 1, 0.5, 1] } }">
-        <div class="text-xs font-semibold uppercase tracking-wider text-brand-primary">Tim Kami</div>
-        <h2 class="mt-2 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">Orang-orang di Balik Layanan</h2>
-      </div>
-
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <!-- Tab Content -->
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { type: 'tween', duration: 600, ease: [0.16, 1, 0.3, 1] } }">
         <div
-          v-for="(t, idx) in team"
-          :key="t.id"
-          class="group overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-slate-200/70 transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
-          v-motion
-          :initial="{ opacity: 0, y: 20 }"
-          :visible-once="{
-            opacity: 1,
-            y: 0,
-            transition: { type: 'tween', duration: 600, delay: idx * 60, ease: [0.16, 1, 0.3, 1] },
-          }"
+          v-for="(member, idx) in structureData[activeTab]"
+          :key="member.name"
+          @click="selectedMember = member"
+          class="group overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-slate-200/70 transition duration-400 ease-in-out hover:-translate-y-2 hover:shadow-xl cursor-pointer"
         >
           <div class="overflow-hidden">
             <img
-              :src="t.photoUrl || 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80'"
-              :alt="t.name"
-              class="aspect-[4/3] w-full object-cover transition duration-300 ease-in-out group-hover:scale-105"
+              :src="member.photo"
+              :alt="member.name"
+              class="aspect-square w-full object-cover transition duration-500 ease-in-out group-hover:scale-110"
               loading="lazy"
             />
           </div>
-          <div class="p-5">
-            <AppBadge :tone="t.tone === 'amber' ? 'amber' : t.tone === 'slate' ? 'slate' : 'emerald'">{{ t.role }}</AppBadge>
-            <div class="mt-3 text-base font-extrabold tracking-tight text-slate-900">{{ t.name }}</div>
-            <p class="mt-2 text-sm leading-relaxed text-slate-600">{{ t.bio }}</p>
+          <div class="p-5 text-center">
+            <div class="text-sm font-extrabold tracking-tight text-slate-900">{{ member.name }}</div>
+            <p class="mt-2 text-xs font-medium text-slate-500">{{ member.role }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div v-if="selectedMember" class="fixed inset-0 z-50 flex items-center justify-center p-4" @click.self="selectedMember = null">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+        <div class="relative w-full max-w-2xl rounded-2xl bg-white shadow-2xl overflow-hidden animate-fadeIn">
+          <button
+            @click="selectedMember = null"
+            class="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div class="grid md:grid-cols-2">
+            <div class="aspect-square overflow-hidden">
+              <img :src="selectedMember.photo" :alt="selectedMember.name" class="h-full w-full object-cover" />
+            </div>
+            <div class="p-8 flex flex-col justify-center">
+              <div class="text-sm font-semibold uppercase tracking-wider text-brand-primary">{{ selectedMember.role }}</div>
+              <h3 class="mt-2 text-2xl font-extrabold tracking-tight text-slate-900">{{ selectedMember.name }}</h3>
+              <p class="mt-4 text-sm leading-relaxed text-slate-600">{{ selectedMember.bio }}</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<style scoped>
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+</style>

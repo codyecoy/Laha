@@ -8,6 +8,7 @@ const links = [
   { to: '/layanan', label: 'Program Kami' },
   { to: '/artikel', label: 'Artikel & Kegiatan' },
   { to: '/galeri', label: 'Galeri' },
+  { to: '/donasi', label: 'Donasi' },
   { to: '/kontak', label: 'Kontak' },
 ]
 </script>
@@ -31,6 +32,7 @@ const links = [
 
           <div class="mt-7 flex flex-wrap gap-3">
             <AppButton variant="primary" size="sm" to="/lapor">Laporkan Kasus</AppButton>
+            <AppButton variant="accent" size="sm" to="/donasi">Donasi</AppButton>
             <AppButton variant="ghost" size="sm" to="/admin/login">Admin</AppButton>
           </div>
         </div>

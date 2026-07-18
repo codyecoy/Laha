@@ -18,6 +18,12 @@ import gambar6 from '../../assets/images/image6.JPG'
 import gambar7 from '../../assets/images/image7.JPG'
 import gambar8 from '../../assets/images/image8.JPG'
 
+import logokemnekum from '../../assets/images/kemenkum.png'
+import logosavethechildern from '../../assets/images/savethechildern.png'
+import logounpar from '../../assets/images/unpar.jpg'
+import logostia from '../../assets/images/stia.jpg'
+import logokmperlin from '../../assets/images/kmperlin.png'
+
 const content = useContentStore()
 
 const services = computed(() => content.services.slice(0, 4))
@@ -80,7 +86,7 @@ const galleryItems = [
 
 const partners = {
   pemerintah: [
-    { name: 'Biro Hukum Provinsi Jawa Barat', logo: null },
+    { name: 'Biro Hukum Provinsi Jawa Barat', logo: gambar5 },
     { name: 'DP2KBP3A Kabupaten Bandung', logo: null },
     { name: 'Dinas Pendidikan Kabupaten Bandung', logo: null },
     { name: 'Desa Cibiru Wetan Kabupaten Bandung', logo: null },
@@ -88,18 +94,18 @@ const partners = {
     { name: 'Kelurahan Mekarjaya Kota Bandung', logo: null },
   ],
   kementerian: [
-    { name: 'Kementerian Hukum Republik Indonesia', logo: null },
-    { name: 'Kementerian Pemberdayaan Perempuan dan Perlindungan Anak Republik Indonesia', logo: null },
+    { name: 'Kementerian Hukum Republik Indonesia', logo: logokemnekum },
+    { name: 'Kementerian Pemberdayaan Perempuan dan Perlindungan Anak Republik Indonesia', logo: logokmperlin },
     { name: 'Lembaga Pembinaan Khusus Anak (LPKA) Kelas II A Bandung', logo: null },
   ],
   lembaga: [
     { name: 'Rumah Zakat', logo: null },
-    { name: 'Save the Children', logo: null },
+    { name: 'Save the Children', logo: logosavethechildern },
     { name: 'Lembaga Bantuan Hukum Pengayoman Universitas Katolik Parahyangan Bandung', logo: null },
   ],
   perguruanTinggi: [
-    { name: 'Universitas Katolik Parahyangan (UNPAR) Bandung', logo: null },
-    { name: 'Sekolah Tinggi Ilmu Administrasi Negara (STIA LAN) Bandung', logo: null },
+    { name: 'Universitas Katolik Parahyangan (UNPAR) Bandung', logo: logounpar },
+    { name: 'Sekolah Tinggi Ilmu Administrasi Negara (STIA LAN) Bandung', logo: logostia },
   ],
 }
 
@@ -280,10 +286,15 @@ onMounted(() => {
         <!-- Pemerintah -->
         <div>
           <h3 class="text-lg font-bold text-slate-700 mb-4">Pemerintah Daerah</h3>
-          <div class="flex flex-wrap gap-4">
-            <div v-for="partner in partners.pemerintah" :key="partner.name" class="flex items-center gap-3 px-6 py-3 rounded-full bg-white shadow-sm ring-1 ring-slate-200">
-              <img v-if="partner.logo" :src="partner.logo" :alt="partner.name" class="h-8 w-auto object-contain">
-              <span class="text-sm font-medium text-slate-700">{{ partner.name }}</span>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div v-for="partner in partners.pemerintah" :key="partner.name" class="group flex items-center gap-4 p-5 rounded-xl bg-white shadow-md ring-1 ring-slate-200/70 transition duration-400 ease-in-out hover:-translate-y-1 hover:shadow-lg">
+              <div v-if="partner.logo" class="flex-shrink-0">
+                <img :src="partner.logo" :alt="partner.name" class="h-20 w-20 object-contain">
+              </div>
+              <div v-else class="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-lg bg-brand-primary/10">
+                <AppIcon name="building" class="h-10 w-10 text-brand-primary"></AppIcon>
+              </div>
+              <span class="text-sm font-semibold text-slate-700 group-hover:text-brand-primary transition duration-300">{{ partner.name }}</span>
             </div>
           </div>
         </div>
@@ -291,10 +302,15 @@ onMounted(() => {
         <!-- Kementerian -->
         <div>
           <h3 class="text-lg font-bold text-slate-700 mb-4">Kementerian & Lembaga Negara</h3>
-          <div class="flex flex-wrap gap-4">
-            <div v-for="partner in partners.kementerian" :key="partner.name" class="flex items-center gap-3 px-6 py-3 rounded-full bg-white shadow-sm ring-1 ring-slate-200">
-              <img v-if="partner.logo" :src="partner.logo" :alt="partner.name" class="h-8 w-auto object-contain">
-              <span class="text-sm font-medium text-slate-700">{{ partner.name }}</span>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div v-for="partner in partners.kementerian" :key="partner.name" class="group flex items-center gap-4 p-5 rounded-xl bg-white shadow-md ring-1 ring-slate-200/70 transition duration-400 ease-in-out hover:-translate-y-1 hover:shadow-lg">
+              <div v-if="partner.logo" class="flex-shrink-0">
+                <img :src="partner.logo" :alt="partner.name" class="h-20 w-20 object-contain">
+              </div>
+              <div v-else class="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-lg bg-brand-primary/10">
+                <AppIcon name="government" class="h-10 w-10 text-brand-primary"></AppIcon>
+              </div>
+              <span class="text-sm font-semibold text-slate-700 group-hover:text-brand-primary transition duration-300">{{ partner.name }}</span>
             </div>
           </div>
         </div>
@@ -302,10 +318,15 @@ onMounted(() => {
         <!-- Lembaga Non Pemerintah -->
         <div>
           <h3 class="text-lg font-bold text-slate-700 mb-4">Lembaga Non Pemerintah</h3>
-          <div class="flex flex-wrap gap-4">
-            <div v-for="partner in partners.lembaga" :key="partner.name" class="flex items-center gap-3 px-6 py-3 rounded-full bg-white shadow-sm ring-1 ring-slate-200">
-              <img v-if="partner.logo" :src="partner.logo" :alt="partner.name" class="h-8 w-auto object-contain">
-              <span class="text-sm font-medium text-slate-700">{{ partner.name }}</span>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div v-for="partner in partners.lembaga" :key="partner.name" class="group flex items-center gap-4 p-5 rounded-xl bg-white shadow-md ring-1 ring-slate-200/70 transition duration-400 ease-in-out hover:-translate-y-1 hover:shadow-lg">
+              <div v-if="partner.logo" class="flex-shrink-0">
+                <img :src="partner.logo" :alt="partner.name" class="h-20 w-20 object-contain">
+              </div>
+              <div v-else class="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-lg bg-brand-accent/10">
+                <AppIcon name="heart" class="h-10 w-10 text-brand-accent"></AppIcon>
+              </div>
+              <span class="text-sm font-semibold text-slate-700 group-hover:text-brand-primary transition duration-300">{{ partner.name }}</span>
             </div>
           </div>
         </div>
@@ -313,10 +334,15 @@ onMounted(() => {
         <!-- Perguruan Tinggi -->
         <div>
           <h3 class="text-lg font-bold text-slate-700 mb-4">Perguruan Tinggi</h3>
-          <div class="flex flex-wrap gap-4">
-            <div v-for="partner in partners.perguruanTinggi" :key="partner.name" class="flex items-center gap-3 px-6 py-3 rounded-full bg-white shadow-sm ring-1 ring-slate-200">
-              <img v-if="partner.logo" :src="partner.logo" :alt="partner.name" class="h-8 w-auto object-contain">
-              <span class="text-sm font-medium text-slate-700">{{ partner.name }}</span>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div v-for="partner in partners.perguruanTinggi" :key="partner.name" class="group flex items-center gap-4 p-5 rounded-xl bg-white shadow-md ring-1 ring-slate-200/70 transition duration-400 ease-in-out hover:-translate-y-1 hover:shadow-lg">
+              <div v-if="partner.logo" class="flex-shrink-0">
+                <img :src="partner.logo" :alt="partner.name" class="h-20 w-20 object-contain">
+              </div>
+              <div v-else class="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-lg bg-brand-primary/10">
+                <AppIcon name="book" class="h-10 w-10 text-brand-primary"></AppIcon>
+              </div>
+              <span class="text-sm font-semibold text-slate-700 group-hover:text-brand-primary transition duration-300">{{ partner.name }}</span>
             </div>
           </div>
         </div>
@@ -330,14 +356,17 @@ onMounted(() => {
       <div class="mt-8 rounded-3xl bg-gradient-to-r from-brand-primary via-brand-primary to-brand-primary p-8 text-white shadow-xl sm:p-10" v-motion :initial="{ opacity: 0, y: 12 }" :visible-once="{ opacity: 1, y: 0, transition: { type: 'tween', duration: 700, ease: [0.25, 1, 0.5, 1] } }">
         <div class="grid gap-8 lg:grid-cols-12 lg:items-center">
           <div class="lg:col-span-8">
-            <div class="text-sm font-semibold text-white/90">Butuh Bantuan?</div>
-            <div class="mt-2 text-3xl font-extrabold tracking-tight">Laporkan Kasus atau Konsultasi Awal</div>
+            <div class="text-sm font-semibold text-white/90">Butuh Bantuan atau Ingin Berdonasi?</div>
+            <div class="mt-2 text-3xl font-extrabold tracking-tight">Laporkan Kasus atau Dukung Kami</div>
             <div class="mt-3 text-sm leading-relaxed text-white/85">
-              Anda bisa anonim. Tim kami memprioritaskan keselamatan dan kerahasiaan.
+              Anda bisa anonim. Tim kami memprioritaskan keselamatan dan kerahasiaan. Donasi membantu pendampingan kasus dan edukasi.
             </div>
           </div>
           <div class="flex flex-col gap-3 lg:col-span-4 lg:items-end">
-            <AppButton variant="accent" size="lg" to="/lapor">Laporkan Sekarang</AppButton>
+            <div class="flex flex-wrap gap-3">
+              <AppButton variant="accent" size="lg" to="/lapor">Laporkan Sekarang</AppButton>
+              <AppButton variant="white" size="lg" to="/donasi">Donasi</AppButton>
+            </div>
             <div class="text-sm font-semibold text-white/90">Hotline: (022) 720 7023</div>
           </div>
         </div>

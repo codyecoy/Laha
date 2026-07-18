@@ -52,6 +52,7 @@ function isActive(to) {
 
         <div class="hidden items-center gap-2 lg:flex">
           <AppButton variant="ghost" size="sm" to="/lapor">Laporkan Kasus</AppButton>
+          <AppButton variant="primary" size="sm" to="/donasi">Donasi</AppButton>
         </div>
 
         <button
@@ -89,6 +90,7 @@ function isActive(to) {
           </div>
           <div class="mt-3 grid gap-2">
             <AppButton variant="ghost" to="/lapor" @click="mobileOpen = false">Laporkan Kasus</AppButton>
+            <AppButton variant="primary" to="/donasi" @click="mobileOpen = false">Donasi</AppButton>
           </div>
         </div>
       </div>

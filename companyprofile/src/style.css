@@ -18,8 +18,8 @@
   --soft-bg: #f8fafc;
   --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 
-  --sans: Inter, system-ui, 'Segoe UI', Roboto, Arial, sans-serif;
-  --heading: Inter, system-ui, 'Segoe UI', Roboto, Arial, sans-serif;
+  --sans: Poppins, system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: Poppins, system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 16px/160% var(--sans);
